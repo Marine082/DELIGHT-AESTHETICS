@@ -1,0 +1,593 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Aesthetics</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Palace Script MT;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh; /* Full viewport height */
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire section */
+            z-index: -1; /* Place the video behind the content */
+        }
+
+        #hero h1 {
+            font-family: 'Felix Titling', serif;
+            font-size: 7em;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        #hero h1 span {
+            font-family: 'Palace Script MT', cursive;
+            font-size: 2em;
+        }
+
+        #hero p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 20px;
+            background-color: #73695D;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        #bookings {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #73695D;
+            color: #fff;
+        }
+
+        .service {
+            margin: 20px 0;
+        }
+
+        .service h3 {
+            font-size: 2em;
+        }
+
+        .service button {
+            background-color: #ff7f7f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .service button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* FAQ Section */
+        #faq {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #portfolio h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #portfolio p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        #portfolio ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #portfolio ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 20px;
+            background-color: #73695D;
+            color: #fff;
+            text-align: center;
+        }
+
+        #contact a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#bookings">BOOKINGS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about">MORE ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section id="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/P2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Delight <span>Aesthetics</span></h1>
+            <p>Where artistry meets precision in permanent makeup and advanced skincare treatments.</p>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>Get to know us</h2>
+        <p>Welcome to Delight Aesthetics, where artistry meets precision in permanent makeup and advanced skincare treatments. Trained at one of the top academies in the country and proudly SAAHSP registered, I bring advanced skills and expertise to every treatment. Specializing in permanent makeup, including our exclusive Nano Brows™ technique, and microneedling, I ensure exceptional results tailored to enhance your natural beauty.</p>
+        <p>Why choose us? Our commitment to excellence, personalized care, and state-of-the-art techniques set us apart. Located in Aliwal North, we also offer services across the Eastern Cape and Free State, bringing refined beauty solutions to you.</p>
+        <p>Experience the pinnacle of permanent makeup artistry and skincare with Delight Aesthetics.</p>
+    </section>
+
+<section id="bookings"> 
+    <h2>Permanent Makeup</h2>
+
+    <div class="service">
+        <h3>Ombre Brows</h3>
+        <p>An ombre brow in permanent makeup is a technique where the brow color fades from light to dark.</p>
+        <p>Price: R1200</p>
+        <div class="image-container">
+            <img src="OMBRE BROWS.jpg" alt="Ombre Brows">
+        </div>
+        <button><a href="https://wa.link/pghek0" target="_blank">BOOK</a></button>
+    </div>
+
+    <div class="service">
+        <h3>Microblading</h3>
+        <p>Microblading is a semi-permanent makeup technique that uses fine, hair-like strokes to fill in sparse eyebrows.</p>
+        <p>Price: R1000</p>
+        <div class="image-container">
+            <img src="MICROBLADING BROWS.jpg" alt="Microblading Brows">
+        </div>
+        <button><a href="https://wa.link/pghek0" target="_blank">BOOK</a></button>
+    </div>
+
+    <div class="service">
+        <h3>Hybrid Brows</h3>
+        <p>Hybrid brows combine microblading and ombre shading techniques. They use fine, hair-like strokes for a natural look at the front and soft shading for added depth and fullness toward the tail. This method suits those seeking defined yet natural-looking brows and works well for all skin types.</p>
+        <p>Price: R1500</p>
+        <div class="image-container">
+            <img src="HYBRID BROWS.jpg" alt="Hybrid Brows">
+        </div>
+       <button><a href="https://wa.link/pghek0" target="_blank">BOOK</a></button>
+    </div>
+
+    <div class="service">
+        <h3>Lash Enhancer</h3>
+        <p>It's a subtle technique where eyeliner is applied right at the base of your lashes to create the illusion of fuller, darker lashes and to enhance the shape of your eyes. It's a great way to define your eyes without the look of a traditional eyeliner, giving a more natural and polished appearance.</p>
+        <p>Price: R900</p>
+        <div class="image-container">
+            <img src="LASH ENHANCER.jpg" alt="Lash Enhancer">
+        </div>
+        <button><a href="https://wa.link/pghek0" target="_blank">BOOK</a></button>
+    </div>
+
+    <div class="service">
+        <h3>Eyeliner</h3>
+        <p>Eyeliner is a tattooing technique that applies pigment along the lash line, creating a long-lasting, smudge-proof eyeliner. It gives a thicker line than lash enhancers, ensuring a consistently defined look and saving time on daily makeup.</p>
+        <p>Price: R900 - R1200</p>
+        <div class="image-container">
+            <img src="EYELINER.jpg" alt="Eyeliner">
+        </div>
+        <button><a href="https://wa.link/pghek0" target="_blank">BOOK</a></button>
+    </div>
+
+    <div class="service">
+        <h3>Nano Lip Treatment</h3>
+        <p>Nano lip treatment is a semi-permanent makeup technique that enhances the appearance of the lips using a specialized nano needle. Pigment is implanted into the lips to define their shape, add color, and create a fuller appearance. This procedure can correct asymmetry, improve lip color, and make lips look naturally plump without the need for injectables.</p>
+        <p>Price: R1200</p>
+        <div class="image-container">
+            <img src="NANO LIPS.jpg" alt="Nano Lip Treatment">
+        </div>
+        <button><a href="https://wa.link/pghek0" target="_blank">BOOK</a></button>
+    </div>
+</section>
+
+<style>
+    /* General section styling */
+    #bookings {
+        padding: 20px;
+        background-color: #73695D; /* Light background color */
+        color: #FFFFFF; /* Text color */
+    }
+
+    #bookings h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #FFFFFF; /* Matching your color scheme */
+    }
+
+    /* Individual service styling */
+    .service {
+        background-color: #4D4238; /* Dark grey background for each service */
+        border: 2px solid #4D4238; /* Dark brown frame around each service */
+        border-radius: 10px; /* Rounded corners for the frame */
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        color: #FFFFFF; /* White text color for better readability */
+    }
+
+    .service h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #FFFFFF; /* White color for headers */
+    }
+
+    .service p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .service .image-container {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .service img {
+        max-width: 50%; /* Resize image to 50% of its original size */
+        height: auto;
+        border-radius: 5px; /* Optional: rounded corners for images */
+    }
+
+    .service button {
+        background-color: #37312D; /* Button color matching your color scheme */
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .service button a {
+        color: #FFFFFF
+        text-decoration: none;
+    }
+
+    .service button:hover {
+        background-color: #37312D; /* Darker shade on hover */
+    }
+</style>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+       <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Aesthetics FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #73695D;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            background-color: #4D4238;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .faq-content {
+            margin: 0;
+            padding: 0 10px;
+            display: none;
+            background-color: #5A5046;
+        }
+
+        .faq-content p {
+            padding: 10px 0;
+            border-bottom: 1px solid #80766B;
+        }
+
+        .faq-content p:last-child {
+            border-bottom: none;
+        }
+
+        h2.active, h2:hover {
+            background-color: #3E362F;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll("h2");
+            headers.forEach(function (header) {
+                header.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h2>Permanent Makeup (PMU)</h2>
+    <div class="faq-content">
+        <p><strong>What is Permanent Makeup (PMU)?</strong><br>
+        Permanent Makeup, also known as cosmetic tattooing, involves using a specialized technique to deposit pigments into the skin to enhance features such as eyebrows, eyeliner, and lips.</p>
+
+        <p><strong>How long does Permanent Makeup last?</strong><br>
+        PMU typically lasts between 1 to 3 years, depending on skin type, lifestyle, and aftercare. Touch-ups may be required to maintain the desired look.</p>
+
+        <p><strong>Is the procedure painful?</strong><br>
+        A topical anesthetic is applied to minimize discomfort. Most clients report feeling only minor discomfort during the procedure.</p>
+
+        <p><strong>What is the recovery time?</strong><br>
+        Initial healing takes about 7-10 days, with full healing taking up to 4 weeks. During this time, the color will settle, and any redness or swelling will subside.</p>
+
+        <p><strong>Are there any side effects?</strong><br>
+        Common side effects include mild swelling, redness, and tenderness in the treated area. These usually subside within a few days.</p>
+
+        <p><strong>How do I care for my Permanent Makeup?</strong><br>
+        Follow the aftercare instructions provided by your technician, which typically include keeping the area clean and moisturized, avoiding direct sunlight, and refraining from picking at the treated area.</p>
+    </div>
+
+    <h2>Microneedling</h2>
+    <div class="faq-content">
+        <p><strong>What is Microneedling?</strong><br>
+        Microneedling is a cosmetic procedure that uses fine needles to create micro-injuries in the skin, stimulating collagen production and improving skin texture and tone.</p>
+
+        <p><strong>What skin concerns can Microneedling address?</strong><br>
+        Microneedling can improve the appearance of acne scars, fine lines, wrinkles, enlarged pores, and overall skin texture.</p>
+
+        <p><strong>Is Microneedling painful?</strong><br>
+        A topical numbing cream is applied to ensure comfort during the procedure. Clients typically report minimal discomfort.</p>
+
+        <p><strong>How many sessions are needed?</strong><br>
+        The number of sessions varies based on individual skin concerns. Typically, a series of 3-6 sessions spaced 4-6 weeks apart is recommended for optimal results.</p>
+
+        <p><strong>What is the downtime after Microneedling?</strong><br>
+        Most clients experience redness and mild swelling for 1-3 days post-treatment. Full recovery typically occurs within a week.</p>
+
+        <p><strong>How should I care for my skin after Microneedling?</strong><br>
+        Avoid sun exposure, refrain from using harsh skincare products, and keep the skin moisturized. Follow the aftercare instructions provided by your technician.</p>
+    </div>
+
+    <h2>Lash Extensions</h2>
+    <div class="faq-content">
+        <p><strong>What are Lash Extensions?</strong><br>
+        Lash extensions are semi-permanent fibers that are individually applied to your natural lashes to enhance length, fullness, and curl.</p>
+
+        <p><strong>How long do Lash Extensions last?</strong><br>
+        Lash extensions typically last 4-6 weeks, with refills recommended every 2-3 weeks to maintain fullness.</p>
+
+        <p><strong>Are Lash Extensions safe?</strong><br>
+        Yes, when applied by a trained professional, lash extensions are safe. Proper aftercare is essential to maintain the health of your natural lashes.</p>
+
+        <p><strong>Can I wear makeup with Lash Extensions?</strong><br>
+        Yes, but avoid oil-based products as they can weaken the adhesive bond. Opt for water-based or lash extension-safe makeup.</p>
+
+        <p><strong>How do I care for my Lash Extensions?</strong><br>
+        Avoid rubbing your eyes, keep them dry for the first 24 hours, and use a lash-safe cleanser to keep them clean.</p>
+
+        <p><strong>Can Lash Extensions damage my natural lashes?</strong><br>
+        When applied correctly and with proper care, lash extensions should not damage your natural lashes.</p>
+    </div>
+
+    <h2>Lash Lift</h2>
+    <div class="faq-content">
+        <p><strong>What is a Lash Lift?</strong><br>
+        A Lash Lift is a semi-permanent treatment that curls your natural lashes, giving them a lifted and lengthened appearance.</p>
+
+        <p><strong>How long does a Lash Lift last?</strong><br>
+        A Lash Lift typically lasts 6-8 weeks, depending on your natural lash growth cycle.</p>
+
+        <p><strong>Is a Lash Lift safe?</strong><br>
+        Yes, when performed by a trained professional, a Lash Lift is safe. The treatment uses gentle formulas to curl the lashes.</p>
+
+        <p><strong>Can I wear mascara after a Lash Lift?</strong><br>
+        Yes, you can wear mascara after 24 hours post-treatment. However, many clients find they don’t need mascara due to the enhanced curl and length.</p>
+
+        <p><strong>How do I care for my lashes after a Lash Lift?</strong><br>
+        Avoid water, steam, and rubbing your eyes for the first 24 hours. After that, you can treat them as you normally would.</p>
+
+        <p><strong>Can I combine a Lash Lift with Lash Extensions?</strong><br>
+        It’s not recommended to combine a Lash Lift with Lash Extensions as the two treatments can compromise the integrity of your natural lashes.</p>
+    </div>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Explore our work by viewing the gallery of treatments we have provided to our clients.</p>
+    <div class="portfolio-gallery">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 1.jpg" alt="PORT 1">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 9.jpg" alt="PORT 9">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 3.jpg" alt="PORT 3">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 4.jpg" alt="PORT 4">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 10.jpg" alt="PORT 10">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 19.jpg" alt="PORT 19">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 7.jpg" alt="PORT 7">
+	<img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 2.jpg" alt="PORT 2">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 18.jpg" alt="PORT 18">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 12.jpg" alt="PORT 12">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/LASH LAMINATION.jpg" alt="LASH LAMINATION">
+        <img src="C:\Users\d3dup\Desktop\Marine\Delight Aesthetics\Website/PORT 17.jpg" alt="PORT 17">
+    </div>
+</section>
+
+<style>
+    #portfolio {
+        padding: 20px;
+        background-color: #73695D;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    #portfolio h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #portfolio p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .portfolio-gallery img {
+        width: 30%;
+        max-height: 250px; /* Increased max-height to make images bigger */
+        object-fit: cover;
+        border: 3px solid #4D4238;
+    }
+
+    /* Adjust the size of images for smaller screens */
+    @media (max-width: 768px) {
+        .portfolio-gallery img {
+            width: 45%;
+            max-height: 200px; /* Adjusted max-height for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .portfolio-gallery img {
+            width: 100%;
+            max-height: 300px; /* Adjusted max-height for mobile screens */
+        }
+    }
+</style>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to book a consultation, feel free to reach out.</p>
+        <p><strong>Email us</strong> at <a href="mailto:info@delightaesthetics.com">info@delightaesthetics.com</a></p>
+    </div>
+        <p><strong>Message us on Instagram</strong> at <a href="https://instagram.com/delightaesthetics" target="_blank">@delightaesthetics</a></p>
+    </div>
+    </ul>
+      
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Delight Aesthetics. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
